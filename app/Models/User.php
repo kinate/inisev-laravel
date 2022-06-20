@@ -41,4 +41,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function websites(){
+        return $this->morphToMany(Website::class, "user_websites", null, "website_id");
+    }
 }
