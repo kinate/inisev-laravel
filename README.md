@@ -4,24 +4,28 @@
 Navigate to Your Webroot ie. www or htdocs and create a folder with your desired name eg inisev
 
 Git initialize and pull repository from github using the following commands:
-- git init
-- git pull https://github.com/kinate/inisev-laravel.git
+```sh
+git init
+git pull https://github.com/kinate/inisev-laravel.git
+```
 
 ## Installation
 In Your root directory rename .env.example to .env
 Then Fill in Your database username and password as well as your database name
 Example:
-
+```sh
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=yourDB
 DB_USERNAME=your_user
 DB_PASSWORD=your_password (if required)
+```
 
 And set Queue configuration in .env file as shown below.
-
+```sh
 QUEUE_CONNECTION=database
+```
 
 Then in your terminal command type:
 ```sh
@@ -41,13 +45,14 @@ php artisan migrate --seed
 
 ## Demo email configuration
 In this demo, https://mailtrap.io is used to send and receive emails. Please click the link to create demo account and configure .env file with details from mailtrap. Below is example.
-
+```sh
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
 MAIL_USERNAME=ff0128a4b41882
 MAIL_PASSWORD=0f3b19bf7de4d4
 MAIL_ENCRYPTION=tls
+```
 
 ## API Documentation
 In this demo, there is two API end point for post creation and user subscription.
