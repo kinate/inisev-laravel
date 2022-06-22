@@ -39,7 +39,6 @@ class SendEmails extends Command
         $post = Post::where('website_id', $websiteId)->latest('created_at')->first();
         $subscribers = Website::where('id', $websiteId)->with('users')->first();
 
-        $emailArray = array();
         $post_title=$post->title;
         $post_content=$post->content;
 
