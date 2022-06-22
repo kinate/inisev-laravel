@@ -105,6 +105,8 @@ Also run the following command to start queue jobs.
 php artisan queue:work
 ```
 
+>Note : if Job task is not created after post, run `php artisan config:clear` to clear app configuration and register mail:subsriberWebsite command to artisan command list
+
 Use postman to send API request to  test `subscription` and `new post` as instructed on API Documentation section.
 
 Happy Test.
