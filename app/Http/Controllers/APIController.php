@@ -68,12 +68,8 @@ class APIController extends Controller
             ]);
         }
 
-        $user = User::find($userId);
-
-        $website = $user->websites()->where('websites.id', $websiteId)->get();
-
-
-        if (!$website->isEmpty()) {
+        $website =  DB::table('user_websites')->where(["user_id"=>$userId,"website_id"=>$websiteId])->count();
+        if ($website !=0) {
             return response()
                 ->json([
                     "message" => "The user has already subscribed to this website"

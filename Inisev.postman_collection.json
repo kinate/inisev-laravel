@@ -1,0 +1,76 @@
+{
+	"id": "84711ec1-ff1f-a94c-2dd7-c5493ea56cf5",
+	"name": "Inisev",
+	"description": "",
+	"order": [
+		"4f4361d3-9297-ba80-41cf-f44bcb15b3cd",
+		"35f587c9-656f-3894-ced3-6c595b31f5b7"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1655577369139,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "35f587c9-656f-3894-ced3-6c595b31f5b7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/inisev/public/api/v1/posts",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655579411924,
+			"name": "User Subscription",
+			"description": " create a \"post\" for a \"particular website\"",
+			"collectionId": "84711ec1-ff1f-a94c-2dd7-c5493ea56cf5",
+			"responses": [],
+			"rawModeData": "{\n\t\"website_id\":1,\n\t\"user_id\":1\n}"
+		},
+		{
+			"id": "4f4361d3-9297-ba80-41cf-f44bcb15b3cd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/inisev/public/api/v1/posts",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655579258609,
+			"name": "Create Post",
+			"description": " create a \"post\" for a \"particular website\"",
+			"collectionId": "84711ec1-ff1f-a94c-2dd7-c5493ea56cf5",
+			"responses": [],
+			"rawModeData": "{\n\t\"website_id\":1,\n\t\"user_id\":1\n}"
+		}
+	]
+}

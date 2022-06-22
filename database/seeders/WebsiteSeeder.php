@@ -15,25 +15,25 @@ class WebsiteSeeder extends Seeder
      */
     public function run()
     {
-      Website::insert([
+      Website::create([
            "name"=> "Web saiti 1",
                 ]);
-      Website::insert([
+      Website::create([
            "name"=> "Web saiti 2",
                 ]);
-      Website::insert([
+      Website::create([
            "name"=> "Web saiti 3",
                 ]);
-      Website::insert([
+      Website::create([
            "name"=> "Web saiti 4",
                 ]);
-      Website::insert([
+      Website::create([
            "name"=> "Web saiti 5",
                 ]);
-      Website::insert([
+      Website::create([
            "name"=> "Web saiti 6",
                 ]);
-      Website::insert([
+      Website::create([
            "name"=> "Web saiti 7",
                 ]);
     }

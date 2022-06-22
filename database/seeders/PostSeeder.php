@@ -17,7 +17,7 @@ class PostSeeder extends Seeder
     public function run()
     {
 
-        $post = Post::insert([
+        $post = Post::create([
             "title"=>"Tech today",
             "slug"=>"tech-today",
             "content"=>"Hello Inisev",
@@ -25,7 +25,7 @@ class PostSeeder extends Seeder
             "author"=>1,
             "website_id"=>1, 
         ]);
-        $post = Post::insert([
+        $post = Post::create([
             "title"=>"Electic Cars",
             "slug"=>"electric-cars",
             "content"=>"Tesla is the best",
@@ -33,7 +33,7 @@ class PostSeeder extends Seeder
             "author"=>1,
             "website_id"=>1, 
         ]);
-        $post = Post::insert([
+        $post = Post::create([
             "title"=>"Laravel 9",
             "slug"=>"new laravel 9",
             "content"=>"Things you should know",

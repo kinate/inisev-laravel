@@ -15,23 +15,23 @@ class UserWebsiteSeeder extends Seeder
      */
     public function run()
     {
-    DB::table('user_website')->insert([
+    DB::table('user_websites')->insert([
         "user_id"=>1,
         "website_id"=>1
     ]);
-    DB::table('user_website')->insert([
+    DB::table('user_websites')->insert([
         "user_id"=>1,
         "website_id"=>2
     ]);
-    DB::table('user_website')->insert([
+    DB::table('user_websites')->insert([
         "user_id"=>1,
         "website_id"=>3
     ]);
-    DB::table('user_website')->insert([
+    DB::table('user_websites')->insert([
         "user_id"=>2,
         "website_id"=>3
     ]);
-    DB::table('user_website')->insert([
+    DB::table('user_websites')->insert([
         "user_id"=>3,
         "website_id"=>3
     ]);

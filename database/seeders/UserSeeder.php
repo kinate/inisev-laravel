@@ -18,19 +18,19 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-       User::insert([
-        'name' =>"User 1 Migambo",
-        'email' => 'user1@gmail.com',
+       User::create([
+        'name' =>"Test user 1",
+        'email' => '6ddf9bebdc-42dd66@inbox.mailtrap.io',
         'password' => Hash::make('password'),
        ]);
-       User::insert([
-        'name' =>"User 2 Migambo",
-        'email' => 'user2@hotmail.com',
+       User::create([
+        'name' =>"Test user 2",
+        'email' => '6ddf9bebdc-42dd66e@inbox.mailtrap.io',
         'password' => Hash::make('password'),
        ]);
-       User::insert([
-        'name' =>"User 3 Migambo",
-        'email' => 'user2@cheatMail.com',
+       User::create([
+        'name' =>"Test user 3",
+        'email' => '6ddf9bebdc-42dd66d@inbox.mailtrap.io',
         'password' => Hash::make('password'),
        ]);
 
