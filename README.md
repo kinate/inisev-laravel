@@ -59,6 +59,7 @@ or
 `127.0.0.1:8000/api/v1/posts`
 
 Request body parameter Json:
+```sh
 {
 	"website_id":1,
 	"user_id":1,
@@ -66,11 +67,15 @@ Request body parameter Json:
 	"content":"post contents goes here",
 	"category":"post_category"
 }
+```
 
 Request repsonse
+```sh
 {
     "message": "Post created successfully"
 }
+```
+
 
 #### User subscription
 Subscription URL:
@@ -79,15 +84,19 @@ or
 `127.0.0.1:8000/api/v1/subscribe`
 
 Request body parameter Json:
+```sh
 {
 	"website_id":1,
 	"user_id":3
 }
+```
 
 Request repsonse
+```sh
 {
     "message": "User subscription successfully"
 }
+```
 
 >Note postman import file included in project files named `Inisev.postman_collection.json` to import
 
