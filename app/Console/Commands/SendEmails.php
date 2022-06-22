@@ -45,8 +45,7 @@ class SendEmails extends Command
 
         $users = $subscribers->users;
         foreach ($users as $user) {
-            print_r($user->email);
-            Mail::to('6ddf9bebdc-42dd66@inbox.mailtrap.io')->send(new EmailToSubscriber ($post_title,$post_content));
+            Mail::to($user->email)->send(new EmailToSubscriber ($post_title,$post_content));
         }
 
     }
