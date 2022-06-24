@@ -123,6 +123,22 @@ php artisan queue:work
 
 Use postman to send API request to  test `subscription` and `new post` as instructed on API Documentation section.
 
+### Common issues and fix
+You may run into composer dependencies issues while trying to run this test.
+Example:
+`Composer detected issues in your platform: Your composer dependencies required a PHP version ">=8.1.0" and your running PHP 8.08`
+
+Fix:
+Run the following command to set platform PHP config.
+```sh
+composer config platform.php your_current_php_version_here
+```
+
+Then run the following command to update.
+```sh
+composer update
+```
+
 Happy Test.
 
 
