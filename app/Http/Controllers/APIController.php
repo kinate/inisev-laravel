@@ -19,7 +19,8 @@ class APIController extends Controller
         $title = $request->input('title');
         $content = $request->input('content');
         $category = $request->input('category');
-        $website = Website::find($websiteId);
+        $website = Website::find($websiteId);// this is new comment
+
 
 
         if ($websiteId == "" || $userId == "") {
